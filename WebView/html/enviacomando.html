@@ -1,0 +1,20 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  
+  <script>
+    function myFunc() {
+    document.getElementById("leitorSku").click(); }
+  </script>
+
+  <form id="formA">
+			<button id="leitorSku" type="submit">Enviar</button>
+  </form>
+<script type="text/javascript">
+			$('#formA').submit(function(r){
+			r.preventDefault();
+				
+			var usuario = $('#usuario').val();
+			var id  = $('#id').val();
+			var ativa  = $('#ativa').val();
+			DeclaracaoDoJavaScript.recebendoComando("Nome do Usuário", "Id do Usuário", "comando para verificar");
+			});
+</script>
